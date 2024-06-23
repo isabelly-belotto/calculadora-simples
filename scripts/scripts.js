@@ -4,6 +4,10 @@ const selector = document.getElementById("selector")
 const resultado = document.getElementById("resultado")
 const botao = document.getElementById("botao")
 
+function alertar(){
+  alert('Operação realziada com sucesso')
+}
+
 function calcular() {
   let calculo
   switch (selector.value) {
@@ -34,5 +38,6 @@ function calcular() {
 
 botao.addEventListener("click", () => {
   calcular()
+  alertar()
 })
 
